@@ -10,7 +10,7 @@ export class NewsService {
   currentArticle: any;
   constructor(private http: HttpClient) { }
 
-  getData(url){
+  getData(url) {
     return this.http.get(`${API_URL}/${url}&apiKey=${API_KEY}`);
   }
 }
